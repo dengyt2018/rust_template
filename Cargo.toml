@@ -1,0 +1,27 @@
+[package]
+name = "{{project-name}}"
+version = "0.1.0"
+edition = "2021"
+license = "MIT"
+authors = ["{{authors}}"]
+description = "{{project-description}}"
+
+
+[dependencies]
+
+
+# Set the default for dependencies.
+[profile.dev.package."*"]
+opt-level = 3
+
+[profile.dev]
+# Turn on a small amount of optimisation in development mode.
+opt-level = 1
+
+[profile.release]
+debug = 0         # No debug info at all
+strip = true      # Automatically strip symbols from the binary.
+opt-level = "z"   # Optimize for size.
+lto = true        # Enable Link Time Optimization (LTO)
+codegen-units = 1 # Reduce Parallel Code Generation Units to Increase Optimization
+panic = "abort"   # Abort on Panic
