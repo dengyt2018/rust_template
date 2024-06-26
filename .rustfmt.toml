@@ -6,9 +6,9 @@ wrap_comments = true
 comment_width = 100
 format_code_in_doc_comments = true
 
-indent_style = "Visual"
+#indent_style = "Visual"
 merge_derives = false
-use_small_heuristics = "Max"
+#use_small_heuristics = "Max"
 match_block_trailing_comma = true
 group_imports = "StdExternalCrate"
 format_macro_matchers = true
