@@ -14,9 +14,6 @@ condense_wildcard_suffixes = true
 group_imports = "StdExternalCrate"
 imports_granularity = "Crate"
 
-
-
-
 ignore = [
     "/build/",
     "/*-build/",
